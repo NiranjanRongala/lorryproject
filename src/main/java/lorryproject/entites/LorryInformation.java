@@ -26,7 +26,7 @@ public class LorryInformation {
 	private String lorrynum;
 	@Column(name = "lorrystatus")
 	private String status;
-	
+	//Mapping information
 	@OneToMany(mappedBy = "lorryinformation")
 	@JsonIgnore // ignore the property from serialization
 	private List<LorryStatus> lorryStatus = new ArrayList<LorryStatus>();
